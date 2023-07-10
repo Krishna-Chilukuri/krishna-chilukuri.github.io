@@ -24,7 +24,6 @@ footer{
 
 @media screen and (max-width:1000px) {
     footer{
-        width:142vw;
         height:40vh;
     }
     .fourthSection{

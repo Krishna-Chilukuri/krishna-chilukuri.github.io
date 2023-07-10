@@ -39,9 +39,6 @@ nav ul li a:hover {
         justify-content: space-around;
         align-items: center;
     }
-    header{
-        width:142vw;
-    }
     .left {
         font-size: 2rem;
         justify-content: center;
