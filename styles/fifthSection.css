@@ -58,11 +58,11 @@
     }
 }
 
-@media screen and (max-width:1000px) {
+/* @media screen and (max-width:1000px) {
     .fifthSection{
         height:63vh;
     }
-}
+} */
 
 .sql {
     width: 90%;

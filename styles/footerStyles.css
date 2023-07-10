@@ -42,7 +42,7 @@ footer{
     }
 }
 
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
     footer{
         width:142vw;
         height:20vh;
@@ -60,4 +60,4 @@ footer{
     .fourthSection ul{
         padding: 10px 0;
     }
-}
+} */
