@@ -22,7 +22,7 @@ footer{
     font-size: 17px;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:1000px) {
     footer{
         width:142vw;
         height:40vh;

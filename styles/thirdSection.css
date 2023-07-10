@@ -43,7 +43,7 @@
     color: rgb(165, 97, 221);
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:1000px) {
     .thirdSec{
         height:80vh;
     }
