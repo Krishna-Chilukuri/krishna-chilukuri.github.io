@@ -39,7 +39,7 @@
         <section class="firstSec">
             
             <div class="leftSec">
-                Hi, My name is <span class="nameinSection">Krishna Prudhvi</span>
+                Hi, My name is <span class="nameinSection" id="elementu"></span>
                 <div>and I am</div>
                 <span id="element"></span>
             </div>
@@ -209,6 +209,12 @@
         </div>
     </footer>
     <script src="./logic/typing_text.js"></script>
+    <script>
+        var typed1= new Typed('#elementu',{
+            strings: ['Krishna Prudhvi'],
+            typeSpeed: 50,
+        });
+    </script>
     <script>
         var typed = new Typed('#element', {
             strings: ['an Ex- TCS Employee', '&amp; a CS Grad Student at GMU.'],
