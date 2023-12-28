@@ -1,0 +1,44 @@
+.seventhSec {
+    max-width: 85vw;
+    margin: auto;
+    height: 54vh;
+}
+
+.seventhSec h1 {
+    font-size: 1.7rem;
+}
+
+.project-timeline{
+    background: white;
+    width: 75vw;
+    height: 3px;
+    margin: 56px 0;
+}
+
+.project-table{
+    justify-content: center;
+    align-items: center;
+}
+
+.project-table table, th, td{
+    border-collapse: collapse;
+    width: 75vw;
+    padding: 1vw;
+    text-align: center;
+    border: 2px solid white;
+}
+
+/* td:hover{
+    background-color: white;
+    color: rgb(0, 0, 45);
+} */
+
+.project-table a{
+    color: white;
+    text-decoration: none;
+}
+
+.project-table a:hover{
+    color: rgb(0, 0, 45);
+    background-color: white;
+}
