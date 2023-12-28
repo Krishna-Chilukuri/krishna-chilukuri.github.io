@@ -3,10 +3,29 @@ var winList =   [[[0, 0], [0,1], [0, 2]], [[1,0], [1,1], [1,2]], [[2,0], [2,1], 
                 [[0, 0], [1,0], [2,0]], [[0,1], [1,1], [2,1]], [[0,2], [1,2], [2,2]],
                 [[0,0], [1,1], [2,2]], [[0,2], [1,1], [2,0]]];
 
+const coordinateToCell = [["cell1", "cell2", "cell3"], 
+                        ["cell4", "cell5", "cell6"],
+                        ["cell7", "cell8", "cell9"]];
+
 var modeOfGame = 0;
+var gameOver = false;
+
+const resultPara = document.querySelector(".resultPara");
+const ticTacCells = document.querySelector(".tictactoeCell");
 
 function resetGame() {
     xoMatrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+    console.log("XO MATRIX SET TO 0");
+    gameOver = false;
+    for (let index = 1; index < 10; index++){
+        // const element = array[index];
+        // let index11 = String(index);
+        // const cellID = 'cell ${index1}';
+        const cellID = 'cell'+index;
+        document.getElementById(cellID).innerHTML = "";
+        console.log(cellID, typeof(cellID));
+    }
+    // document.getElementById("cell4").onclick = playerMove(1,0);
 }
 
 function checkForWin(val){
@@ -151,34 +170,66 @@ function miniMax(depth, currentMove){
     }
 }
 
-const playerMove = (x, y) => {
-    if (xoMatrix[x][y] == 0){
-        xoMatrix[x][y] = 1;
-        console.log("User played his move properly!!");
+function blockAllInputs() {
+    console.log("INPUTS DISABLED");
+    // ticTacCells.disabled = true;
+    gameOver = true;
+    // document.getElementById("cell1").disabled = true;
+    // document.getElementById("cell4").onclick = blockThis();
+}
 
+
+const playerMove = (x, y, cellId) => {
+    if (!gameOver && xoMatrix[x][y] == 0){
+        xoMatrix[x][y] = 1;
+        console.log(cellId, typeof(cellId));
+        // <img src="../resources/xIcon." alt="">
+        {/* <img src="../resources/oIcon." alt=""> */}
+        document.getElementById(cellId).innerHTML='<img src="../resources/xIcon.png" alt="X"/>';
+        // document.getElementById("cell1")
+        console.log("User played his move properly!!");
         if(!isGameNotOver()) {
             console.log("It's a Win - Win situation");
+            resultPara.textContent = "It's a Win - Win situation";
+            blockAllInputs();
+            //Block all other inputs except for reset
             // Result para ni set cheyyali with the above msg
         }
         else if(checkForWin(1)) {
             console.log("U Won the game");
+            resultPara.textContent = "U Won the game";
+            blockAllInputs();
+            //Block all other inputs except for reset
             // Result para ni set cheyyali with the above msg
         }
         else {
             let retCell = miniMax(0, 1)[1];
             console.log("Return Cell from minimax: ",retCell);
             xoMatrix[retCell[0]][retCell[1]] = 2;
+            console.log("COORDINATES: ",retCell[0], retCell[1]);
+            let retCellID = coordinateToCell[retCell[0]][retCell[1]];
+            console.log("ETST",retCellID)
+            document.getElementById(retCellID).innerHTML='<img src="../resources/oIcon.png" alt="O"/>';
 
             console.log("AI move completed!!!!");
             if(!isGameNotOver()) {
                 console.log("It's a Win - Win situation");
+                resultPara.textContent = "It's a Win - Win situation";
+                blockAllInputs();
+                //Block all other inputs except for reset
                 // Result para ni set cheyyali with the above msg
             }
             else if(checkForWin(2)) {
                 console.log("COM Won the game!!!");
+                resultPara.textContent = "COM Won the game!!!";
+                blockAllInputs();
+                //Block all other inputs except for reset
                 // Result para ni set cheyyali with the above msg
             }
         }
+    }
+    else if(gameOver) {
+        console.log("GAME IS OVER!!! Click Reset or Reload page");
     }
     else {
         console.log("User clicked on a previously assigned cell!!");

@@ -31,23 +31,23 @@
         <div class="projectSec">
             <div class="diffAndClear">
                 <!-- <input type="button" value="Reset" class="resetButton"> -->
-                <button type="button">Reset Game</button>
+                <button type="button" onclick="resetGame()">Reset Game</button>
             </div>
             <div class="tictactoeBoard">
                 <!-- tictactoeBoard is the grid container -->
-                <div id = "cell1" class="tictactoeCell" onclick="playerMove(0,0)">1</div>
-                <div id = "cell2" class="tictactoeCell" onclick="playerMove(0,1)">2</div>
-                <div id = "cell3" class="tictactoeCell" onclick="playerMove(0,2)">3</div>
-                <div id = "cell4" class="tictactoeCell" onclick="playerMove(1,0)">4</div>
-                <div id = "cell5" class="tictactoeCell", onclick="playerMove(1,1)">5</div>
-                <div id = "cell6" class="tictactoeCell" onclick="playerMove(1,2)">6</div>
-                <div id = "cell7" class="tictactoeCell" onclick="playerMove(2,0)">7</div>
-                <div id = "cell8" class="tictactoeCell" onclick="playerMove(2,1)">8</div>
-                <div id = "cell9" class="tictactoeCell" onclick="playerMove(2,2)">9</div>
+                <div id = "cell1" class="tictactoeCell" onclick="playerMove(0,0, 'cell1')"></div>
+                <div id = "cell2" class="tictactoeCell" onclick="playerMove(0,1, 'cell2')"></div>
+                <div id = "cell3" class="tictactoeCell" onclick="playerMove(0,2, 'cell3')"></div>
+                <div id = "cell4" class="tictactoeCell" onclick="playerMove(1,0, 'cell4')"></div>
+                <div id = "cell5" class="tictactoeCell" onclick="playerMove(1,1, 'cell5')"></div>
+                <div id = "cell6" class="tictactoeCell" onclick="playerMove(1,2, 'cell6')"></div>
+                <div id = "cell7" class="tictactoeCell" onclick="playerMove(2,0, 'cell7')"></div>
+                <div id = "cell8" class="tictactoeCell" onclick="playerMove(2,1, 'cell8')"></div>
+                <div id = "cell9" class="tictactoeCell" onclick="playerMove(2,2, 'cell9')"></div>
             </div>
         </div>
         <div class="resultSec">
-            <p></p>
+            <p class="resultPara"></p>
             <!-- This para should be filled by JS upon game completion -->
             <!-- <p>This is the Result</p> -->
         </div>
@@ -65,15 +65,18 @@
                 <ul>
                     <li><b>Credits:</b></li>
                     <li>Typed Text&nbsp;: <a
-                            href="https://github.com/mattboldt/typed.js/">https://github.com/mattboldt/typed.js/</a>
+                            href="https://github.com/mattboldt/typed.js/" target="_blank" rel="noopener noreferrer">https://github.com/mattboldt/typed.js/</a>
                     </li>
                     <li>Image<span id="spaces">&emsp;&emsp;&nbsp;&nbsp;</span>: <a
-                            href=https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943>https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943/</a>
+                            href="https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943" target="_blank" rel="noopener noreferrer">https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943/</a>
+                    </li>
+                    <li>Icons&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a
+                            href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">https://www.flaticon.com/</a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
-    <script src="../logic/tic_tac_toe_logic.js"></script>
+    <script src="../logic/tic_tac_toe_logic.js" defer></script>
 </body>
 </html>
