@@ -1,7 +1,7 @@
 .seventhSec {
     max-width: 85vw;
     margin: auto;
-    height: 54vh;
+    height: 110vh;
 }
 
 .seventhSec h1 {
@@ -9,7 +9,7 @@
 }
 
 .project-timeline{
-    /* background: white; */
+    background: white;
     width: 75vw;
     height: 3px;
     margin: 56px 0;
@@ -33,12 +33,12 @@
     color: rgb(0, 0, 45);
 } */
 
-.project-table a{
+.work-text a{
     color: white;
     text-decoration: none;
 }
 
-.project-table a:hover{
+.work-text :hover{
     color: rgb(0, 0, 45);
     background-color: white;
 }
