@@ -1,0 +1,41 @@
+.custom-indent0{
+    display: inline-block;
+    text-indent: 0.75vw;
+}
+
+.custom-indent1{
+    display: inline-block;
+    text-indent: 1vw;
+}
+
+.custom-indent2{
+    display: inline-block;
+    text-indent: 2.5vw;
+}
+
+.custom-indent3{
+
+    display: inline-block;
+    text-indent: 3vw;
+}
+
+.custom-indent4{
+    display: inline-block;
+    text-indent: 4vw;
+}
+
+.custom-indent6{
+    display: inline-block;
+    text-indent: 6vw;
+}
+
+.custom-indent20{
+    display: inline-block;
+    text-indent: 1.5vw;
+}
+
+/* @media screen and (max-width:1000px) {
+    .custom-indent1{
+        display: inline;
+    }
+} */

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./styles/sixthSection.css">
     <link rel="stylesheet" href="./styles/seventhSection.css">
     <link rel="stylesheet" href="./styles/collapsible.css">
+    <link rel="stylesheet" href="./styles/textIndents.css">
     <link rel="icon" type="image" href="./resources/kp_icon.png">
 </head>
 
@@ -55,10 +56,15 @@
             <h1>Work Experience</h1>
             <div class="work-timeline">
                 <div class="work-text">
-                    <b>Company</b> : Tata Consultancy Services (TCS)<br>
-                    <b>Role</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp; : Java Developer<br>
-                    (Feb-2021 to May-2022)<br><br>
+                    <work-item><b>Company</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Tata Consultancy Services(TCS)</work-item>
+                    <work-item><b>Role</b></work-item>
+                    <work-item> &nbsp;:&nbsp; </work-item>
+                    <work-item>Java Developer</work-item>
+                    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp; -->
+                    <div class="duration-item">(Feb-2021 to May-2022)</div>
                 </div>
                 <div class="work-specifics">
                     Worked on development and maintenance of several enterprise Java Web Applications developed by our
@@ -74,6 +80,79 @@
             <br><br>
         </section>
         <hr>
+        <section class="seventhSec">
+            <h1>Projects</h1>
+            <div class="project-timeline">
+                <div class="work-text">
+                    <work-item><b>Project</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Tic Tac Toe using Minimax</work-item>
+                    <work-item><b>Inspiration</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Got the idea of this project after "Intro to AI" course during my 2nd semester at GMU.</work-item>
+                    <work-item><b>Tools Used</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>HTML, CSS, JavaScript, Python(For Initial Algorithm)</work-item>
+                    <work-item><b>Live Link</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item><a href="https://krishna-chilukuri.github.io/TicTacToe-with-Minimax/" target="_blank" rel="noopener noreferrer">Click Here</a></work-item>
+                    <div class="duration-item">(December-2023)</div>
+                </div>
+                <button class="collapsible">Click to View Description</button>
+                <div class="project-specifics">
+                    This project implemented Minimax algorithm to find the next best move to pick after player's move inorder to minimize the winning chances of the player to either draw the game or to defeat the player. Also, a fun idea to throw an AI player at another is also implemented.<br>
+                        <ul>
+                            <li id="work-desc">The next move is played by AI after looking through the highest possible depth(upto terminal states) and picking the best move that satisfies it's interests.</li>
+                            <li id="work-desc">If there exists multiple moves with equal weightage, a random move of these is picked.</li>
+                        </ul>
+                </div>
+                <hr>
+            <!-- </div><br><br><br><br><br><br><br><br><br><br><br><br> -->
+            <!--Divs not closed properly lead to improper DOM-->
+                <div class="work-text">
+                    <work-item><b>Project</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Image Captioning by Asking Questions</work-item>
+                    <work-item><b>Tools Used</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Python, TensorFlow, Pandas, Numpy</work-item>
+                    <work-item><b>Paper Link</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item><a href="https://dl.acm.org/doi/fullHtml/10.1145/3313873" target="_blank" rel="noopener noreferrer">Click Here</a></work-item>
+                    <div class="duration-item">(April-2019 to March-2020)</div>
+                </div>
+                <button class="collapsible">Click to View Description</button>
+                <div class="project-specifics">
+                    This project uses a model trained by us to captions an image by asking questions about it and answering them by itself. The accuracy as any Machine Learning project is based on the size of training set and its coverage.<br>
+                    <ul>
+                        <li id="work-desc">Computer Vision is used to obtain features of the image.</li>
+                        <li id="work-desc">Natural Language Processing is used in the question answering part.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="work-text">
+                    <work-item><b>Project</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Online Recruitment System</work-item>
+                    <work-item><b>Tools Used</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>HTML, CSS, JavaScript, PHP, XAMPP and mySQL</work-item>
+                    <div class="duration-item">(October-2018 to December-2018)</div>
+                </div>
+                <button class="collapsible">Click to View Description</button>
+                <div class="project-specifics">
+                    <b>Description</b>: This is a full stack web application which replicates the functionalities of a website used to recruit and apply for jobs.<br>
+                    <ul>
+                        <li id="work-desc">Applicants or Recruiters have distinct web page based on the role.</li>
+                        <li id="work-desc">This is identified by their login id's which are stored in db.</li>
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+        </section>
+        <br>
+        <hr>
+        <br>
         <section class="thirdSec">
             <h1>Education</h1>
             <div class="education-timeline">
@@ -118,59 +197,6 @@
                         (Apr-2013 to Mar-2014)<br>
                         CGPA: <span id="cgpas">9.8</span> / 10 <br>
                     </div>
-                </div>
-            </div>
-            <br><br>
-        </section>
-        <hr>
-        <section class="seventhSec">
-            <h1>Projects</h1>
-            <div class="project-timeline">
-                <div class="work-text">
-                    <b>Project</b> : Tic Tac Toe using Minimax<br>
-                    <b>Inspiration</b>: Got the idea of this project after "Intro to AI" course during my 2nd semester at GMU.<br>
-                    <b>Tools Used</b>: HTML, CSS, JavaScript, Python(For Initial Algorithm)<br>
-                    <b>Live Link</b>: <a href="https://krishna-chilukuri.github.io/TicTacToe-with-Minimax/" target="_blank" rel="noopener noreferrer">Click Here</a><br>
-                    (December-2023)<br><br>
-                </div>
-                <button class="collapsible">Click to View Description</button>
-                <div class="project-specifics">
-                    This project implemented Minimax algorithm to find the next best move to pick after player's move inorder to minimize the winning chances of the player to either draw the game or to defeat the player. Also, a fun idea to throw an AI player at another is also implemented.<br>
-                        <ul>
-                            <li id="work-desc">The next move is played by AI after looking through the highest possible depth(upto terminal states) and picking the best move that satisfies it's interests.</li>
-                            <li id="work-desc">If there exists multiple moves with equal weightage, a random move of these is picked.</li>
-                        </ul>
-                </div>
-                <hr>
-            <!-- </div><br><br><br><br><br><br><br><br><br><br><br><br> -->
-            <!--Divs not closed properly lead to improper DOM-->
-                <div class="work-text">
-                    <b>Project</b> : Image Captioning by Asking Questions<br>
-                    <b>Tools Used</b> : Python, TensorFlow, Pandas, Numpy<br>
-                    <b>Paper Link</b> : <a href="https://dl.acm.org/doi/fullHtml/10.1145/3313873" target="_blank" rel="noopener noreferrer">Click Here</a><br>
-                    (April-2019 to March-2020)<br><br>
-                </div>
-                <button class="collapsible">Click to View Description</button>
-                <div class="project-specifics">
-                    This project uses a model trained by us to captions an image by asking questions about it and answering them by itself. The accuracy as any Machine Learning project is based on the size of training set and its coverage.<br>
-                    <ul>
-                        <li id="work-desc">Computer Vision is used to obtain features of the image.</li>
-                        <li id="work-desc">Natural Language Processing is used in the question answering part.</li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="work-text">
-                    <b>Project</b> : Online Recruitment System<br>
-                    <b>Tools Used</b> : HTML, CSS, JavaScript, PHP, XAMPP and mySQL<br>
-                    (October-2018 to December-2018)<br><br>
-                </div>
-                <button class="collapsible">Click to View Description</button>
-                <div class="project-specifics">
-                    <b>Description</b>: This is a full stack web application which replicates the functionalities of a website used to recruit and apply for jobs.<br>
-                    <ul>
-                        <li id="work-desc">Applicants or Recruiters have distinct web page based on the role.</li>
-                        <li id="work-desc">This is identified by their login id's which are stored in db.</li>
-                    </ul>
                 </div>
             </div>
             <br><br>
@@ -246,22 +272,48 @@
     <footer>
         <div class="fourthSection">
             <div class="contactDetails">
-                <ul>
-                    <li>Mail ID<span id="spaces">&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;</span>: krishna.chilukuri@yahoo.com</li>
-                    <li>Phone Number<span id="spaces">&emsp;&ensp;&nbsp;&nbsp;&nbsp;</span>: +1 (571) 470-3556</li>
-                    <li>WhatsApp Number&nbsp;: +91 7382470754</li>
-                </ul>
+                <table>
+                    <tr>
+                        <td>Mail ID</td>
+                        <td>: krishna.chilukuri@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td>: +1 (571) 470-3556</td>
+                    </tr>
+                    <tr>
+                        <td>WhatsApp Number</td>
+                        <td>: +91 7382470754</td>
+                    </tr>
+                </table>
+                <!-- <ul>
+                    <li>Mail ID <span class="custom-indent6"> : </span> krishna.chilukuri@yahoo.com</li>
+                    <li>Phone Number <span class="custom-indent2"> : </span> +1 (571) 470-3556</li>
+                    <li>WhatsApp Number <span class="custom-indent0"> : </span> +91 7382470754</li>
+                </ul> -->
             </div>
             <div class="credits">
-                <ul>
+                <table>
+                    <tr>
+                        <td>Typed Text</td>
+                        <td>: <a 
+                            href="https://github.com/mattboldt/typed.js/" target="_blank" rel="noopener noreferrer">https://github.com/mattboldt/typed.js/</a></td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td>: <a
+                            href="https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943" target="_blank" rel="noopener noreferrer">https://www.cleanpng.com/</a></td>
+                    </tr>
+                </table>
+                <!-- <ul>
                     <li><b>Credits:</b></li>
-                    <li>Typed Text&nbsp;: <a
+                    <li>Typed Text <span class="custom-indent0"> : </span> <a
                             href="https://github.com/mattboldt/typed.js/" target="_blank" rel="noopener noreferrer">https://github.com/mattboldt/typed.js/</a>
                     </li>
-                    <li>Image<span id="spaces">&emsp;&emsp;&nbsp;&nbsp;</span>: <a
-                            href="https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943" target="_blank" rel="noopener noreferrer">https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943/</a>
+                    <li>Image <span class="custom-indent3"> : </span> <a
+                            href="https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943" target="_blank" rel="noopener noreferrer">https://www.cleanpng.com/</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </footer>

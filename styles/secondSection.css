@@ -12,14 +12,27 @@
     height: 3px;
     margin: 56px 0;
 }
-.work-text{
+/* .work-text{
     position: relative;
     top: 18px;
     width:75vw;
     margin:5px 3rem;
     font-size: 20px;
-    /* background-color: red; */
+    background-color: red; 
+} */
+.work-text {
+    /* margin: 2vh 0; */
+    padding: 2vh 2vw;
+    display: grid;
+    justify-content: left;
+    grid-template-columns: auto auto auto;
+    font-size: 20px;
 }
+
+.duration-item {
+    grid-column: 1/4;
+}
+
 .work-specifics{
     position:relative;
     margin:5px 3rem;
@@ -38,6 +51,9 @@
     /* .secondSec{
         height:75vh;
     } */
+    .work-text{
+        font-size: inherit;
+    }
     .secondSec{
         max-width: 85vw;
         margin: auto;
