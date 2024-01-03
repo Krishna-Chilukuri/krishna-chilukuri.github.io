@@ -4,13 +4,13 @@
     /* height: auto; */
     min-height: 100vh;
     overflow: auto;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
     /* overflow: hidden; */
 }
 
-.seventhSec::-webkit-scrollbar {
+/* .seventhSec::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .seventhSec h1 {
     font-size: 1.7rem;
@@ -39,15 +39,7 @@
     background-color: white;
 }
 
-@media screen and (max-width: 1000px){
-    /* .seventhSec{ */
-        /* background-color: red; */
-        /* height: 250vh; */
-    /* } */
+/* @media screen and (max-width: 1000px){
+    
 
-    /* .buttonDiv {
-        justify-content: center;    
-    } */
-
-
-}
+} */

@@ -52,6 +52,11 @@
         display: grid;
         grid-template-columns: auto;
         padding-top: 34px;
+        /* padding-left: 34px; */
+        /* justify-content: center; */
+    }
+    .skillBar{
+        width:100%;
     }
     .skillGridContainer div:nth-last-of-type(odd) {
         order: 1;
