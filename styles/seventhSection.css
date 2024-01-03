@@ -4,7 +4,12 @@
     /* height: auto; */
     min-height: 100vh;
     overflow: auto;
+    scrollbar-width: none;
     /* overflow: hidden; */
+}
+
+.seventhSec::-webkit-scrollbar {
+    display: none;
 }
 
 .seventhSec h1 {
@@ -17,6 +22,7 @@
     height: 3px;
     margin: 2vw 0;
 }
+
 
 /* td:hover{
     background-color: white;
