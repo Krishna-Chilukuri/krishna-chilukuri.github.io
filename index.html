@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/fifthSection.css">
     <link rel="stylesheet" href="./styles/sixthSection.css">
     <link rel="stylesheet" href="./styles/seventhSection.css">
+    <link rel="stylesheet" href="./styles/collapsible.css">
     <link rel="icon" type="image" href="./resources/kp_icon.png">
 </head>
 
@@ -129,24 +130,28 @@
                     <b>Project</b> : Tic Tac Toe using Minimax<br>
                     <b>Inspiration</b>: Got the idea of this project after "Intro to AI" course during my 2nd semester at GMU.<br>
                     <b>Tools Used</b>: HTML, CSS, JavaScript, Python(For Initial Algorithm)<br>
-                    <b>Live Link</b>: <a href="https://krishna-chilukuri.github.io/TicTacToe-with-Minimax/">Click Here</a><br>
+                    <b>Live Link</b>: <a href="https://krishna-chilukuri.github.io/TicTacToe-with-Minimax/" target="_blank" rel="noopener noreferrer">Click Here</a><br>
                     (December-2023)<br><br>
                 </div>
-                <div class="work-specifics">
-                    <b>Description</b>: This project implemented Minimax algorithm to find the next best move to pick after player's move inorder to minimize the winning chances of the player to either draw the game or to defeat the player. Also, a fun idea to throw an AI player at another is also implemented.<br>
-                    <ul>
-                        <li id="work-desc">The next move is played by AI after looking through the highest possible depth(upto terminal states) and picking the best move that satisfies it's interests.</li>
-                        <li id="work-desc">If there exists multiple moves with equal weightage, a random move of these is picked.</li>
-                    </ul>
-                </div><br>
+                <button class="collapsible">Click to View Description</button>
+                <div class="project-specifics">
+                    This project implemented Minimax algorithm to find the next best move to pick after player's move inorder to minimize the winning chances of the player to either draw the game or to defeat the player. Also, a fun idea to throw an AI player at another is also implemented.<br>
+                        <ul>
+                            <li id="work-desc">The next move is played by AI after looking through the highest possible depth(upto terminal states) and picking the best move that satisfies it's interests.</li>
+                            <li id="work-desc">If there exists multiple moves with equal weightage, a random move of these is picked.</li>
+                        </ul>
+                </div>
+            <!-- </div><br><br><br><br><br><br><br><br><br><br><br><br> -->
+            <!--Divs not closed properly lead to improper DOM-->
                 <div class="work-text">
                     <b>Project</b> : Image Captioning by Asking Questions<br>
                     <b>Tools Used</b> : Python, TensorFlow, Pandas, Numpy<br>
                     <b>Paper Link</b> : <a href="https://dl.acm.org/doi/fullHtml/10.1145/3313873" target="_blank" rel="noopener noreferrer">Click Here</a><br>
                     (April-2019 to March-2020)<br><br>
                 </div>
-                <div class="work-specifics">
-                    <b>Description</b>: This project uses a model trained by us to captions an image by asking questions about it and answering them by itself. The accuracy as any Machine Learning project is based on the size of training set and its coverage.
+                <button class="collapsible">Click to View Description</button>
+                <div class="project-specifics">
+                    This project uses a model trained by us to captions an image by asking questions about it and answering them by itself. The accuracy as any Machine Learning project is based on the size of training set and its coverage.
                         <li id="work-desc">Computer Vision is used to obtain features of the image.</li>
                         <li id="work-desc">Natural Language Processing is used in the question answering part.</li>
                     </ul>
@@ -267,6 +272,22 @@
             strings: ['an Ex- TCS Employee', '&amp;','a CS Grad Student at GMU.'],
             typeSpeed: 50,
         });
+    </script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
     </script>
 </body>
 

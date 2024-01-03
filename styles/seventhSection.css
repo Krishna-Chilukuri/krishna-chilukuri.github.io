@@ -1,7 +1,10 @@
 .seventhSec {
     max-width: 85vw;
     margin: auto;
-    height: 110vh;
+    /* height: auto; */
+    min-height: 100vh;
+    overflow: auto;
+    /* overflow: hidden; */
 }
 
 .seventhSec h1 {
@@ -12,20 +15,7 @@
     background: white;
     width: 75vw;
     height: 3px;
-    margin: 56px 0;
-}
-
-.project-table{
-    justify-content: center;
-    align-items: center;
-}
-
-.project-table table, th, td{
-    border-collapse: collapse;
-    width: 75vw;
-    padding: 1vw;
-    text-align: center;
-    border: 2px solid white;
+    margin: 2vw 0;
 }
 
 /* td:hover{
@@ -38,7 +28,20 @@
     text-decoration: none;
 }
 
-.work-text :hover{
+.work-text a:hover{
     color: rgb(0, 0, 45);
     background-color: white;
+}
+
+@media screen and (max-width: 1000px){
+    /* .seventhSec{ */
+        /* background-color: red; */
+        /* height: 250vh; */
+    /* } */
+
+    /* .buttonDiv {
+        justify-content: center;    
+    } */
+
+
 }
