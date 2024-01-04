@@ -22,6 +22,13 @@ footer{
     font-size: 17px;
 }
 
+caption{
+    /* background-color: red; */
+    display: flex;
+    font-size: 1.1em;
+    /* justify-content: flex-start; */
+}
+
 @media screen and (max-width:1000px) {
     footer{
         height:40vh;
