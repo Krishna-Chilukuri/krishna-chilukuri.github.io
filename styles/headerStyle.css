@@ -3,7 +3,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 125px;
+    height: 25vh;
 }
 
 nav ul {

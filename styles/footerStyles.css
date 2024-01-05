@@ -1,12 +1,12 @@
 footer{
     background-color: rgb(20, 20, 69);
-    height:150px;
+    height:21vh;
 }
 
 .fourthSection{
     display:flex;
     justify-content: space-around;
-    margin: 23px 122px;
+    margin: 2vh 3vh;
     padding:30px 0;
 }
 
@@ -20,6 +20,21 @@ footer{
 
 .contactDetails{
     font-size: 17px;
+}
+
+.footergrid {
+    /* margin: 2vh 0; */
+    padding: 2vh 2vw;
+    display: grid;
+    justify-content: left;
+    grid-template-columns: auto auto auto;
+    /* font-size: 20px; */
+}
+
+.footerContentHeading{
+    grid-column: 1/4;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 caption{
