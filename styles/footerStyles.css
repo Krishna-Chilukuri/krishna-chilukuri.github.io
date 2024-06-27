@@ -1,13 +1,17 @@
 footer{
     background-color: rgb(20, 20, 69);
-    height:21vh;
+    margin-bottom: 0;
+    /* height:21vh; */
+    min-height: max-content;
 }
 
 .fourthSection{
     display:flex;
     justify-content: space-around;
-    margin: 2vh 3vh;
+    /* margin: 2vh 3vh; */
     padding:30px 0;
+    min-height: max-content;
+    /* background-color: red; */
 }
 
 .fourthSection ul{
@@ -24,8 +28,10 @@ footer{
 
 .footergrid {
     /* margin: 2vh 0; */
-    padding: 2vh 2vw;
+    /* padding: 2vh 2vw; */
+    padding: 15px;
     display: grid;
+    align-items: center;
     justify-content: left;
     grid-template-columns: auto auto auto;
     /* font-size: 20px; */
@@ -45,9 +51,9 @@ caption{
 }
 
 @media screen and (max-width:1000px) {
-    footer{
+    /* footer{
         height:40vh;
-    }
+    } */
     .fourthSection{
         display: grid;
         grid-template-columns: auto;
