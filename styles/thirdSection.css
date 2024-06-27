@@ -1,41 +1,13 @@
 .thirdSec {
     max-width: 85vw;
     margin: auto;
-    height: 54vh;
+    margin-bottom: 2vh;
+    /* height: 54vh; */
+    height: 120vh;
 }
 
 .thirdSec h1 {
     font-size: 1.7rem;
-}
-
-.education-timeline {
-    background: white;
-    width: 80vw;
-    height: 3px;
-    margin: 56px 0;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.education-checkpoint {/*Doubt*/
-    height: 90px;
-    width: 2px;
-    background-color: white;
-    margin: 0 150px;
-}
-
-.education-text {
-    position: relative;
-    top: 95px;
-    width: 218px;
-    font-size: 20px;
-}
-
-.course-specifics {
-    position: relative;
-    top: 99px;
-    width: 218px;
-    font-size: 14px;
 }
 
 #cgpas {
@@ -43,14 +15,15 @@
     color: rgb(165, 97, 221);
 }
 
-@media screen and (max-width:1000px) {
+/* @media screen and (max-width:1000px) {
     .thirdSec{
         height:90vh;
     }
+}
     .education-timeline{
         background: white;
         width:3px;
-        height: 125vw;
+        height: 100vw;
         margin: 20px 0;
         display:grid;
         grid-template-columns: auto;
@@ -76,7 +49,7 @@
         width: 261px;
         font-size: 10px;
     }
-}
+} */
 
 /* @media screen and (max-width:1000px){
     .education-timeline {

@@ -4,6 +4,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 25vh;
+    width: 100%;
 }
 
 nav ul {
@@ -32,6 +33,34 @@ nav ul li a:hover {
     justify-content: left;
 }
 
+.menuButton {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.noneDisplay {
+    display: none;
+}
+
+.fullDisplay {
+    background-color: rgb(6, 6, 69);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullDisplay a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10vh;
+    margin-left: 5vw;
+    font-size: large;
+}
+
+
+
 @media screen and (max-width: 1000px) {
     nav{
         /* background-color: red; */
@@ -43,6 +72,21 @@ nav ul li a:hover {
     .left {
         font-size: 2rem;
         justify-content: center;
+        /* content: 'KP'; */
+        /* background-color: red; */
+    }
+
+    .menuButton {
+        display: flex;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .menuButton:focus .hiddenMenu{
+        display: flex;
+        flex-direction: column;
     }
 }
 

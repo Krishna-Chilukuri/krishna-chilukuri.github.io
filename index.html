@@ -27,10 +27,11 @@
 <body>
     <header>
         <nav>
+            <div class="left" id="kpName">Krishna Prudhvi Chilukuri</div>
             <!-- <div class="left"><img src="./resources/Namikaze Passport Photo original.jpg" width="150em" height="200em"></div> -->
-            <div class="left">Krishna Prudhvi Chilukuri</div>
             <div class="right">
-                <ul>
+                <button class="menuButton" onclick="menuToggle()"><img src="./resources/menu_white.png" alt="" srcset="" id="dispImg"></button>
+                <ul class="navLinks">
                     <li><a href="https://www.linkedin.com/in/krishna-prudhvi-chilukuri/" target="_blank">LinkedIn</a>
                     </li>
                     <li><a href="https://github.com/Krishna-Chilukuri" target="_blank">GitHub</a></li>
@@ -41,6 +42,11 @@
         </nav>
     </header>
     <main>
+        <section class="noneDisplay" id="noneDisplay">
+            <a href="https://www.linkedin.com/in/krishna-prudhvi-chilukuri/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Krishna-Chilukuri" target="_blank">GitHub</a>
+            <a href="https://leetcode.com/Krishna_Chilukuri/" target="_blank">LeetCode</a>
+        </section>
         <section class="firstSec">
             
             <div class="leftSec">
@@ -200,52 +206,67 @@
         <br>
         <section class="thirdSec">
             <h1>Education</h1>
-            <div class="education-timeline">
-                <div class="education-checkpoint">
-                    <div class="education-text">
-                        Master of Science (MS)
-                    </div>
-                    <div class="course-specifics">
-                        Computer Science<br>
-                        George Mason University<br>
-                        (Jan-2023 to May-2024)<br>
-                        CGPA: <span id="cgpas">3.87</span> <br>
-                    </div>
+            <div class="project-timeline">
+                <div class="work-text">
+                    <work-item><b>University</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>George Mason University</work-item>
+                    <work-item><b>Degree</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Master of Science</work-item>
+                    <work-item><b>Major</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Computer Science</work-item>
+                    <work-item><b>CGPA</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>3.87 / 4.0</work-item>
+                    <div class="duration-item">(Jan-2023 to May-2024)</div>
                 </div>
-                <div class="education-checkpoint">
-                    <div class="education-text">
-                        Bachelor of Technology
-                    </div>
-                    <div class="course-specifics">
-                        Computer Science & Engineering<br>
-                        R.V.R & J.C. College of Engineering<br>
-                        (June-2016 to Sep-2020)<br>
-                        CGPA: <span id=cgpas>8.91</span> / 10 <br>
-                    </div>
+                <hr>
+                <div class="work-text">
+                    <work-item><b>College</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>R.V.R & J.C. College of Engineering</work-item>
+                    <work-item><b>Degree</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Bachelor of Technology</work-item>
+                    <work-item><b>Major</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Computer Science & Engineering</work-item>
+                    <work-item><b>CGPA</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>8.91 / 10</work-item>
+                    <div class="duration-item">(June-2016 to September-2020)</div>
                 </div>
-                <div class="education-checkpoint">
-                    <div class="education-text">
-                        12th Grade
-                    </div>
-                    <div class="course-specifics">
-                        Narayana Junior College<br>
-                        (Apr-2014 to Mar-2016)<br>
-                        Score: <span id="cgpas">984</span> / 1000 <br>
-                    </div>
+                <hr>
+                <div class="work-text">
+                    <work-item><b>Junior College</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Narayana Junior College</work-item>
+                    <work-item><b>Course</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Intermediate MPC</work-item>
+                    <work-item><b>Percentage</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>98.4</work-item>
+                    <div class="duration-item">(April-2014 to March-2016)</div>
                 </div>
-                <div class="education-checkpoint">
-                    <div class="education-text">
-                        10th Grade
-                    </div>
-                    <div class="course-specifics">
-                        Narayana Concept School<br>
-                        (Apr-2013 to Mar-2014)<br>
-                        CGPA: <span id="cgpas">9.8</span> / 10 <br>
-                    </div>
+                <hr>
+            <!-- </div><br><br><br><br><br><br><br><br><br><br><br><br> -->
+            <!--Divs not closed properly lead to improper DOM-->
+                <div class="work-text">
+                    <work-item><b>School</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>Narayana Concept School</work-item>
+                    <work-item><b>CGPA</b></work-item>
+                    <work-item> &nbsp;: &nbsp;</work-item>
+                    <work-item>9.8 / 10  (10th Grade)</work-item>
+                    <div class="duration-item">(April-2013 to March-2014)</div>
                 </div>
             </div>
             <br><br>
         </section>
+        
         <hr>
         <section class="fifthSection">
             <h1>Skills</h1>
@@ -416,6 +437,39 @@
         });
         }
     </script>
+    <script>
+        function menuToggle() {
+            console.log("Button clicked");
+            const ele = document.getElementById("noneDisplay");
+            if (ele.classList.contains("noneDisplay")) {
+                ele.classList.remove("noneDisplay");
+                ele.classList.add("fullDisplay");
+                document.getElementById("dispImg").src="./resources/close_white.png";
+            }
+            else {
+                ele.classList.remove("fullDisplay");
+                ele.classList.add("noneDisplay");
+                document.getElementById("dispImg").src="./resources/menu_white.png";
+            }
+        }
+
+        function updateName() {
+            let nameEle = document.getElementById("kpName");
+            if (window.innerWidth < 1000) {
+                nameEle.textContent = "Krishna Chilukuri";
+            }
+            else {
+                nameEle.textContent = "Krishna Prudhvi Chilukuri";
+            }
+            console.log("Name content checked");
+        }
+
+        updateName();
+
+        window.addEventListener('resize', updateName);
+    </script>
 </body>
 
 </html>
+
+<!-- <button class="menuButton" onclick="menuToggle()"><img src="./resources/menu_white.png" alt="" srcset="" id="dispImg"></button> -->
